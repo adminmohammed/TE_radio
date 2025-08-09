@@ -3,7 +3,6 @@ game 'gta5'
 
 author 'VRP Radio System - FastScripts'
 description 'Advanced VRP Radio System with Permissions'
-version 'release-1.3.1-vrp'
 lua54 'yes'
 
 name 'TE_Radio'
