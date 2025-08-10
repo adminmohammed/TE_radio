@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'VRP Radio System - FastScripts'
+author 'VRP Radio System'
 description 'Advanced VRP Radio System with Permissions'
 lua54 'yes'
 
@@ -54,4 +54,5 @@ files {
     "html/img/custom/*.jpg",
     "html/js/node_modules/animejs/lib/*.js"
 }
+
 
