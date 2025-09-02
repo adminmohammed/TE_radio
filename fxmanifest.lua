@@ -1,35 +1,30 @@
 fx_version 'cerulean'
 game 'gta5'
-
-author 'VRP Radio System'
-description 'Advanced VRP Radio System with Permissions'
 lua54 'yes'
 
-name 'TE_Radio'
-version 'v1.2.1'
-author 'ARMANDO'
+author 'vRP Radio System'
+version '1.3.1'
 
+-- VRP Dependencies
 dependencies {
     'vrp',
+    'ox_lib',
     'oxmysql'
 }
 
-escrow_ignore {
-
-    "shared/*.lua",
-}
-
+-- Shared files
 shared_scripts {
     '@vrp/lib/utils.lua',
+    '@ox_lib/init.lua',
     'shared/sh_config.lua'
 }
 
-
+-- Client files
 client_scripts {
     'client/*.lua'
 }
 
-
+-- Server files  
 server_scripts {
     '@vrp/lib/utils.lua',
     '@oxmysql/lib/MySQL.lua',
@@ -37,8 +32,8 @@ server_scripts {
     'server/*.lua'
 }
 
+-- UI files
 ui_page 'html/index.html'
-
 
 files {
     "html/index.html",
@@ -55,4 +50,8 @@ files {
     "html/js/node_modules/animejs/lib/*.js"
 }
 
-
+escrow_ignore {
+    "shared/*.lua",
+    "server/*.lua",
+    "client/*.lua"
+}
